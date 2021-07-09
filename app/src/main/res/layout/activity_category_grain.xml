@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".category_grain">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/font"
+        android:text="         곡물         "
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:background="@drawable/edit_text"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:id="@+id/imageButton25"
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/grain_rice" />
+
+                <ImageButton
+                    android:id="@+id/imageButton32"
+                    android:layout_weight="0.7"
+                    android:layout_width="209dp"
+                    android:layout_height="198dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/grain_sweetrice" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:id="@+id/imageButton33"
+                    android:layout_width="149dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/grain_bean" />
+
+                <ImageButton
+                    android:id="@+id/imageButton34"
+                    android:layout_weight="0.7"
+                    android:layout_width="182dp"
+                    android:layout_height="213dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/grain_mungbean" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:id="@+id/imageButton35"
+                    android:layout_width="192dp"
+                    android:layout_height="197dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/grain_oat" />
+
+                <ImageButton
+                    android:id="@+id/imageButton36"
+                    android:layout_weight="0.7"
+                    android:layout_width="241dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/grain_soosoo" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

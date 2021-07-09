@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:layout_marginLeft="@dimen/pageMarginAndOffset"
+        android:layout_marginRight="@dimen/pageMarginAndOffset"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgBanner1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            tools:srcCompat="@drawable/top3banner_tomato" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".catrgory_vegibutton">
+
+    <TextView
+        android:id="@+id/titleOfveritable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/font"
+        android:text="         채소         "
+        android:background="@drawable/edit_text"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/vegiScrollview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/vegiScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/tablerow_TomatoPotato"
+                android:layout_width="501dp"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="200dp"
+                    android:layout_height="205dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/vegi_tomato" />
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_weight="1"
+                    android:layout_width="143dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/vegi_potato"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="200dp"
+                    android:layout_height="205dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/vegi_sweetpotato" />
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_weight="1"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/vegi_pumpkin"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    android:layout_width="200dp"
+                    android:layout_height="205dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/vegi_corn" />
+
+                <ImageButton
+                    android:id="@+id/imageButton10"
+                    android:layout_weight="1"
+                    android:layout_width="197dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/vegi_cucumber" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton11"
+                    android:layout_width="200dp"
+                    android:layout_height="205dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/vegi_onion" />
+
+                <ImageButton
+                    android:id="@+id/imageButton12"
+                    android:layout_weight="1"
+                    android:layout_width="136dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/vegi_pepper" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton13"
+                    android:layout_width="200dp"
+                    android:layout_height="205dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/vegi_cabbage" />
+
+                <ImageButton
+                    android:id="@+id/imageButton14"
+                    android:layout_weight="1"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/vegi_radish" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton15"
+                    android:layout_width="206dp"
+                    android:layout_height="179dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/vegi_garlic" />
+
+                <ImageButton
+                    android:id="@+id/imageButton16"
+                    android:layout_weight="1"
+                    android:layout_width="257dp"
+                    android:layout_height="179dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/vegi_paprika" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton17"
+                    android:layout_width="200dp"
+                    android:layout_height="205dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/vegi_mushroom" />
+
+                <ImageButton
+                    android:id="@+id/imageButton18"
+                    android:layout_weight="1"
+                    android:layout_width="200dp"
+                    android:layout_height="205dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/vegi_pa" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>
