@@ -32,4 +32,32 @@
         android:layout_weight="1"
         android:text="수박 화채" />
 
+    <Button
+        android:id="@+id/WMrecipe1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="수박즙돼지목심구이" />
+
+    <Button
+        android:id="@+id/WMrecipe2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="수박비빔국수와 수박고추장소스" />
+
+    <Button
+        android:id="@+id/WMrecipe3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="수박증편" />
+
+    <Button
+        android:id="@+id/WMrecipe4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="수박껍질풋고추볶음" />
+
 </LinearLayout>

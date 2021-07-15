@@ -2,7 +2,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,6 +18,24 @@
             android:layout_height="197dp"
             android:contentDescription="@string/app_name"
             tools:srcCompat="@drawable/top3banner_watermelon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="45dp"
+                android:layout_height="49dp"
+                android:src="@drawable/sellong_jecheol" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="57dp"
+                android:layout_height="49dp"
+                android:src="@drawable/selling_no1" />
+        </LinearLayout>
 
     </RelativeLayout>
 

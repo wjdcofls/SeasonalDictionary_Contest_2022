@@ -21,6 +21,7 @@ public class MainActivity extends FragmentActivity {
     private int num_page = 3;
     private CircleIndicator3 mIndicator;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,13 +79,31 @@ public class MainActivity extends FragmentActivity {
         });
 
 
+        //int cnt =1;
+
         ImageButton imageButtonVegi = findViewById(R.id.imageButton);
         imageButtonVegi.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), catrgory_vegibutton.class);
-                startActivity(intent);
+
+                int cnt =1;
+
+                switch (cnt){
+
+                    case 1 : {Intent intent = new Intent(getApplicationContext(), catrgory_vegibutton.class);
+                          //cnt++;
+                          startActivity(intent);
+                          cnt++;
+                          break;
+                          }
+
+                     default: {Intent intent = new Intent(getApplicationContext(), category_vegibutton2.class);
+                          //cnt++;
+                          startActivity(intent);
+                          }
+                }
+
             }
         });
 
@@ -117,6 +136,7 @@ public class MainActivity extends FragmentActivity {
                 startActivity(intent);
             }
         });
+
 
 
     }

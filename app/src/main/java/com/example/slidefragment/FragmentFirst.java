@@ -20,15 +20,17 @@ public class FragmentFirst extends Fragment {
 
         banner.setImageResource(R.drawable.top3banner_tomato);
 
-        return rootView;
 
-        imgBanner1.setOnClickListener(new View.OnClickListener() {
+        banner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), TOMATO.class);
                 startActivity(intent);
             }
         });
+
+        return rootView;
+
     }
 
 

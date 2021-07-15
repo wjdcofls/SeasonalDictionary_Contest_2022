@@ -35,6 +35,7 @@
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="제철 7월~8월\n 90% 이상이 물.\n\n
 토마토의 1.5배나 많은 라이코펜이 포함되어있어 유해산소(사람의 체내 세포를 손상시키고 면역 시스템에 해로움)와 암을 일으키는 요소의 생성 및 전이를 억제해주어 암 예방에 효능이 좋다.\n\n
 수박은 식이섬유가 풍부하면서 칼로리는 낮아 다이어트시 섭취하면 식이섬유가 포만감을 주어 체중 감량에 도움을 주고, 시트룰린 성분이 지방이 축적되지 않도로 도와주어 다이어트에 적격.\n\n
@@ -43,10 +44,16 @@
             </ScrollView>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/watermelonRecipe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="수박 레시피" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="수박 시세 예측" />
 
         </LinearLayout>
     </ScrollView>

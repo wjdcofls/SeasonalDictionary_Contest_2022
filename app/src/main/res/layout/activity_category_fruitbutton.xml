@@ -5,20 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/back"
     tools:context=".category_fruitbutton">
 
     <TextView
         android:id="@+id/titleOfFruit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="15dp"
         android:layout_gravity="center"
-        android:background="@drawable/edit_text"
         android:fontFamily="@font/font"
         android:textColor="#FFFFFF"
-        android:padding="8dp"
         android:text="         과일         "
-        android:textSize="30dp"
+        android:textSize="45dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,23 +37,59 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageButton
-                    android:id="@+id/imageButton17"
-                    android:layout_weight="0.5"
-                    android:layout_width="197dp"
-                    android:layout_height="205dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/fruit_waternelon" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="211dp"
+                    android:layout_height="188dp">
 
-                <ImageButton
-                    android:id="@+id/imageButton18"
-                    android:layout_weight="0.7"
-                    android:layout_width="187dp"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
-                    android:background="@null"
-                    app:srcCompat="@drawable/fruit_grape" />
+                    <ImageButton
+                        android:id="@+id/imageButton17"
+                        android:layout_width="197dp"
+                        android:layout_height="205dp"
+                        android:layout_weight="0.5"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/fruit_waternelon"
+                        tools:layout_editor_absoluteX="200dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="61dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:srcCompat="@drawable/selling_no1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="192dp"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/imageButton18"
+                        android:layout_width="193dp"
+                        android:layout_height="192dp"
+                        android:layout_weight="0.7"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/fruit_grape" />
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:srcCompat="@drawable/selling_no2"
+                        tools:layout_editor_absoluteX="127dp"
+                        tools:layout_editor_absoluteY="128dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
             </TableRow>
 
             <TableRow
@@ -70,14 +105,32 @@
                     android:background="@null"
                     app:srcCompat="@drawable/fruit_apple" />
 
-                <ImageButton
-                    android:id="@+id/imageButton20"
-                    android:layout_weight="0.7"
-                    android:layout_width="170dp"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
-                    android:background="@null"
-                    app:srcCompat="@drawable/fruit_pear" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="178dp"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/imageButton20"
+                        android:layout_width="200dp"
+                        android:layout_height="205dp"
+                        android:layout_weight="0.7"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/fruit_koreanmelon" />
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="59dp"
+                        android:layout_height="85dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:srcCompat="@drawable/selling_no3"
+                        tools:layout_editor_absoluteX="135dp"
+                        tools:layout_editor_absoluteY="120dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
             </TableRow>
 
             <TableRow
@@ -100,7 +153,7 @@
                     android:layout_height="match_parent"
                     android:scaleType="fitCenter"
                     android:background="@null"
-                    app:srcCompat="@drawable/fruit_koreanmelon" />
+                    app:srcCompat="@drawable/fruit_pear" />
             </TableRow>
 
             <TableRow

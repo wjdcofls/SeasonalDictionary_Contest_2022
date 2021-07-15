@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background_2_1"
     tools:context=".POTATO">
 
     <ScrollView
@@ -19,13 +20,15 @@
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
-                android:layout_height="262dp"
+                android:layout_height="259dp"
                 app:srcCompat="@drawable/pic_potato" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="#HashTag"/>
+                android:fontFamily="@font/font3"
+                android:hint="             HashTag"
+                android:textSize="14sp"/>
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -35,17 +38,23 @@
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/font3"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
                     android:text="제철 6월~10월\n\n쌀, 밀, 옥수수와 함께 4대 식량 작물\n\n감자의 불소화물은 변비를 치료하고 예방하는 데 효과적이다.\n\n
 또한 사과보다 3배 많은 비타민 C를 함유하고 있어 철분이 잘 흡수될 수 있도록 하여 빈혈 예방에 효과적.\n\n껍질에 이로운 영양분이 많기 때문에 깨끗이 씻어서 껍질째 먹는게 좋다.\n\n
 감자는 소화가 잘 되고 열량이 낮은 편이며, 조금만 먹어도 포만감을 느낄 수 있어 다이어트식으로 적격.\n\n
 비타민과 섬유소가 풍부한 감자즙을 피부에 발라 팩으로 이용하면 피부 미백과 진정 효과가 탁월.\n"
                     android:textColor="#000000" />
+
             </ScrollView>
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/font2_1"
                 android:text="감자 레시피" />
         </LinearLayout>
     </ScrollView>

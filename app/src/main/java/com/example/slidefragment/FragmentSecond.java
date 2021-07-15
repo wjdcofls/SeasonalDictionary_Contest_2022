@@ -1,5 +1,6 @@
 package com.example.slidefragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,14 @@ public class FragmentSecond extends Fragment {
         ImageView banner = rootView.findViewById(R.id.imgBanner2);
 
         banner.setImageResource(R.drawable.top3banner_potato);
+
+        banner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), POTATO.class);
+                startActivity(intent);
+            }
+        });
 
         return rootView;
     }
